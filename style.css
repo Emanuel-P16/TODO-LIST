@@ -1,6 +1,9 @@
 body{
     background-color: whitesmoke;
 }
+.lista{
+    list-style-type: none;
+}
 div,li{
     color: black;
 }
