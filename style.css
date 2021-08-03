@@ -7,6 +7,12 @@ body{
 div,li{
     color: black;
 }
+.elementContainer{
+    display: flex;
+    text-align: center;
+    align-self: center;
+    justify-content: center;
+}
 .todo-list{
     text-align: center;
     align-self: center;

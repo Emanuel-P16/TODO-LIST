@@ -2,12 +2,22 @@
 //Html Objects
 
 const list = document.querySelector(".lista")
+
+const listElement = document.querySelector(".elementContainer")
+
+const deleteTsk = document.querySelectorAll(".deleteTsk")
+
 const submit = document.querySelector(".submit")
 
-//EventsListeners
-
-list.addEventListener("click", deleteTask)
+//deleteTsk.addEventListener("click", deleteTask)
 submit.addEventListener("click",addTask)
+deleteTsk.forEach(function(task){
+
+    task.addEventListener("click",function(task){
+      console.log(task.target.parentElement)
+      task.target.parentElement.remove()
+    })
+})
 
 //Functions
 
@@ -27,8 +37,10 @@ function addTask(e){
     
     
 }
- function deleteTask(e){
-    const elementRemoved = e.target
-     list.removeChild(e.target)
+
+ function deleteTask(task){
+  console.log(task)
     
+    
+   
 }
