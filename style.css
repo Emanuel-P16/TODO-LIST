@@ -4,8 +4,14 @@ body{
 .lista{
     list-style-type: none;
 }
+input{
+    border: none;
+}
 div,li{
     color: black;
+}
+input.form-control:disabled {
+    background-color: black;
 }
 .elementContainer{
     display: flex;
